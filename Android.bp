@@ -7,7 +7,8 @@ android_app {
     platform_apis: true,
     privileged: true,
     certificate: "platform",
-    overrides: ["SetupWizard2", "Provision", "Auditor"],
+    system_ext_specific: true,
+    overrides: ["Provision"],
     static_libs: [
         "androidx.core_core-ktx",
         "androidx.appcompat_appcompat",
